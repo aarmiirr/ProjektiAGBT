@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('bg.jpg');
+        }
+        </style>
+    <div class="container">
+        <form action="/" id="form" onsubmit="return validateForm()">
+        <h1>Log In</h1>
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required />
+            <div class="error" id="email-error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required/>
+            <div class="error" id="password-error"></div>
+        </div>        
+        <button type="submit">Sign In</button>
+        </form>
+    </div>
+    <script src="js/script2.js"></script>    
+</body>
+</html>
